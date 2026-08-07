@@ -20,10 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-[var(--background)]">
-        <div className="flex-1">{children}</div>
+      <body className="bg-[var(--background)]">
+        {children}
         <HandwritingLines />
       </body>
     </html>
