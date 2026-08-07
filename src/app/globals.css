@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  --accent: #ea580c;
+  --accent-hover: #c2410c;
+  --border-color: #e7e5e4;
+  --gradient-warm: linear-gradient(135deg, #f97316 0%, #ea580c 50%, #dc2626 100%);
+  --gradient-pencil: linear-gradient(135deg, #0d36e4 0%, #00ff69 100%);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  color: var(--foreground);
+  font-family: 'Chalkboard', 'Chalkboard SE';
+}
+
+* {
+  transition: background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
+}
+
+.ruled-paper {
+  background-color: var(--background);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 39px,
+    #60a5fa88 39px,
+    #60a5fa88 40px
+  );
+}
+
+.gradient-warm {
+  background: var(--gradient-warm);
+}
+
+.gradient-text {
+  background: var(--gradient-warm);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-pencil {
+  background: var(--gradient-pencil);
+}
