@@ -3,11 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #1c1917;
-  --accent: #ea580c;
-  --accent-hover: #c2410c;
+  --accent: #1d4ed8;
+  --accent-hover: #1e40af;
   --border-color: #e7e5e4;
-  --gradient-warm: linear-gradient(135deg, #f97316 0%, #ea580c 50%, #dc2626 100%);
-  --gradient-pencil: linear-gradient(135deg, #0d36e4 0%, #00ff69 100%);
+  --gradient-brand: linear-gradient(135deg, #0d36e4 0%, #00c896 60%, #00ff69 100%);
 }
 
 @theme inline {
@@ -27,17 +26,6 @@ body {
   transition: background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease, transform 0.15s ease;
 }
 
-.gradient-warm {
-  background: var(--gradient-warm);
-}
-
-.gradient-text {
-  background: var(--gradient-warm);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.gradient-pencil {
-  background: var(--gradient-pencil);
+.gradient-brand {
+  background: var(--gradient-brand);
 }
